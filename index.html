@@ -56,7 +56,8 @@
         opacity: 0;
         animation: fadeInSlideUp 1.5s ease forwards;
       }
-      h1 {
+      h1,
+      button {
         grid-column: 1 / 3;
         grid-row: 3 / 4;
         background: linear-gradient(135deg, #fff7fb 60%, #ffd6df 100%);
@@ -180,7 +181,7 @@
           margin-bottom: 8px;
         }
         /* Adjust animation delay for mobile text */
-        h1 {
+        h1 .button {
           animation-delay: 0.6s;
         }
         .love-paragraph {
@@ -210,8 +211,8 @@
   </head>
   <body>
     <div class="container-fluid px-0">
-      <h1>My Love Reshmi 🖤 !!</h1>
-       <button id="playBtn">Play Music</button>
+      <h1><button id="playBtn">My Love Reshmi 🖤 !!</button></h1>
+
       <audio
         id="loveAudio"
         src="./assets/neeyum-naanum-edited.mp3"
@@ -225,6 +226,7 @@
             document.getElementById("loveAudio").play();
           });
       </script>
+
       <div class="love-grid">
         <img src="./assets/1 (7).JPG" alt="Photo 1" class="love-img img1" />
         <img src="./assets/1 (20).jpg" alt="Photo 2" class="love-img img2" />
@@ -235,8 +237,8 @@
           Vaalanum Nu Mudivu Panna Vachuta 🌏 Unnoda Kannu 👀 , Sirippu 😊 ,
           Pechaala Enna ovvoru naalum Konnu 😵‍💫 Unna meendum meendum love panna
           Vaikkira 🥹. Ethana Naal Aanalum , Enna Nadanthaalum , Unna Ennaikum
-          Vitu Kodukaama Ipo Pola Epovum Love Pante Irupe ❤‍🔥 
-          I Love You Thangamee 🖤
+          Vitu Kodukaama Ipo Pola Epovum Love Pante Irupe ❤‍🔥 I Love
+          You Thangamee 🖤
         </div>
         <img src="./assets/1 (1).jpg" alt="Photo 4" class="love-img img4" />
         <img src="./assets/1 (26).jpg" alt="Photo 5" class="love-img img5" />
@@ -244,7 +246,11 @@
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <iframe
+      src="./assets/neeyum-naanum-edited.mp3"
+      allow="autoplay"
+      style="display: none"
+    ></iframe>
+    <audio src="./assets/neeyum-naanum-edited.mp3" autoplay loop muted></audio>
   </body>
 </html>
-
-
